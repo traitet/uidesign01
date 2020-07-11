@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:uidesign01/screens/DDocApprovePage.dart';
 import 'package:uidesign01/screens/DDocNewFormPage.dart';
+import 'package:uidesign01/screens/ShowMultipleImagePage.dart';
 
 void main() {
   runApp(MyApp());
@@ -104,7 +105,7 @@ class _MyHomePageState extends State<MyHomePage> {
           // mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
 
-
+            RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => ShowMultipleImagePage()),);}, child: Text('Multiple Image Page'),),    
             RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => DDocNewFormPage()),);}, child: Text('D: New Form Page 8 July 2020'),),               
             RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => DDocApprovePage()),);}, child: Text('D: Approve'),),    
 
