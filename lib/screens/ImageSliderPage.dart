@@ -6,15 +6,15 @@ import 'package:flutter/material.dart';
 //==========================================================================
 // MAIN CLASS
 //==========================================================================
-class ShowMultipleImagePage extends StatefulWidget {
+class ImageSliderPage extends StatefulWidget {
   @override
-  _ShowMultipleImagePageState createState() => _ShowMultipleImagePageState();
+  _ImageSliderPageState createState() => _ImageSliderPageState();
 }
 
 //==========================================================================
 // STATE CLASS
 //==========================================================================
-class _ShowMultipleImagePageState extends State<ShowMultipleImagePage> {
+class _ImageSliderPageState extends State<ImageSliderPage> {
 //==========================================================================
 // OVERLOADING
 //==========================================================================
@@ -34,7 +34,7 @@ class _ShowMultipleImagePageState extends State<ShowMultipleImagePage> {
 //==========================================================================      
       home: Scaffold(
         appBar: AppBar(
-          leading: IconButton(icon: Icon(Icons.arrow_back), onPressed: (){Navigator.of(context).pop();}),
+          leading: IconButton(icon: Icon(Icons.arrow_back), onPressed: (){Navigator.pop(context);}),
           title: Text('Multiple Image Page'),),
       body: 
         
@@ -48,6 +48,7 @@ class _ShowMultipleImagePageState extends State<ShowMultipleImagePage> {
           child: Stack(
             alignment: Alignment.bottomCenter,
             children: <Widget>[
+              Image.network('https://picsum.photos/250?image=9'),
               Container(
                 height: 400,
                 child: Image(fit: BoxFit.cover,

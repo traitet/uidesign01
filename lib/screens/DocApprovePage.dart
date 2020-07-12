@@ -8,15 +8,15 @@ import 'package:flutter/material.dart';
 //==========================================================================
 // MAIN CLASS
 //==========================================================================
-class DDocApprovePage extends StatefulWidget {
+class DocApprovePage extends StatefulWidget {
   @override
-  _DDocApprovePageState createState() => _DDocApprovePageState();
+  _DocApprovePageState createState() => _DocApprovePageState();
 }
 
 //==========================================================================
 // STATE CLASS
 //==========================================================================
-class _DDocApprovePageState extends State<DDocApprovePage> {
+class _DocApprovePageState extends State<DocApprovePage> {
 //==========================================================================
 // CONSTUCTURE
 //==========================================================================  

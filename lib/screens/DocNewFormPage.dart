@@ -8,16 +8,16 @@ import 'package:flutter/material.dart';
 //==========================================================================
 // MAIN CLASS
 //==========================================================================
-class DDocNewFormPage extends StatefulWidget {
+class DocNewFormPage extends StatefulWidget {
   @override
-  _DDocNewFormPageState createState() => _DDocNewFormPageState();
+  _DocNewFormPageState createState() => _DocNewFormPageState();
 }
 
 
 //==========================================================================
 // STATE CLASS
 //==========================================================================
-class _DDocNewFormPageState extends State<DDocNewFormPage> {
+class _DocNewFormPageState extends State<DocNewFormPage> {
 
 //==========================================================================
 // OVERLOAD
