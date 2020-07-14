@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:uidesign01/screens/SearchBarPage.dart';
+import 'package:uidesign01/screens/SnackBarPage.dart';
+import 'package:uidesign01/screens/SplashScreenPage.dart';
 import 'screens/CarouselSliderPage.dart';
 import 'screens/DocApprovePage.dart';
 import 'screens/DocNewFormPage.dart';
@@ -70,7 +72,10 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
 //==========================================================================
 // BOTTON
-//==========================================================================       
+//==========================================================================    
+            RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => SnackBarPage()),);}, child: Text('Snackbar and tab view, 14 July 2020'),),   
+            RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => SnackBarPage()),);}, child: Text('Snackbar, 14 July 2020'),),   
+            RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => SplashScreenPage()),);}, child: Text('Splash Screen, 12 July 2020'),),    
             RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => SearchBarPage()),);}, child: Text('Search Bar Page, 12 July 2020'),),    
             RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => CarouselSliderPage()),);}, child: Text('Carousel Image Slider / routing, 12 July 2020'),), 
             RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => ImageSliderPage()),);}, child: Text('Image Slider Page, 12 July 2020'),),    
