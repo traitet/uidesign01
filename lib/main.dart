@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:uidesign01/screens/SearchBarPage.dart';
 import 'package:uidesign01/screens/SnackBarPage.dart';
+import 'package:uidesign01/screens/SnackBarTabViewPage.dart';
 import 'package:uidesign01/screens/SplashScreenPage.dart';
 import 'screens/CarouselSliderPage.dart';
 import 'screens/DocApprovePage.dart';
@@ -73,7 +74,7 @@ class _MyHomePageState extends State<MyHomePage> {
 //==========================================================================
 // BOTTON
 //==========================================================================    
-            RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => SnackBarPage()),);}, child: Text('Snackbar and tab view, 14 July 2020'),),   
+            RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => SnackBarTabViewPage()),);}, child: Text('Snackbar and tab view, 14 July 2020'),),   
             RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => SnackBarPage()),);}, child: Text('Snackbar, 14 July 2020'),),   
             RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => SplashScreenPage()),);}, child: Text('Splash Screen, 12 July 2020'),),    
             RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => SearchBarPage()),);}, child: Text('Search Bar Page, 12 July 2020'),),    
