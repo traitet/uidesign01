@@ -2,6 +2,7 @@
 // IMPORT
 //==========================================================================
 import 'package:flutter/material.dart';
+import 'package:uidesign01/screens/SnackBarTabView0Page.dart';
 import 'package:uidesign01/screens/SnackBarTabView1Page.dart';
 import 'package:uidesign01/screens/SnackBarTabView2Page.dart';
 import 'package:uidesign01/screens/SnackBarTabView3Page.dart';
@@ -39,14 +40,14 @@ class _SnackBarTabViewPageState extends State<SnackBarTabViewPage> {
         home: Scaffold(
           key: scaffoldKey,
           appBar: AppBar(
-            title: Text('Snackbar'),
+            title: Text('Snackbar and Bottom Sheet'),
             bottom: TabBar(
               isScrollable: true,
               onTap: (int index){setState(() {tabIndex = index;});},
               tabs:choices.map((Choice choice) {return Tab(text: choice.title,icon: Icon(choice.icon),);}).toList(), )   
             ),
           body: 
-          tabIndex == 0 ? SnackBarTabView1Page():
+          tabIndex == 0 ? SnackBarTabView0Page():
           tabIndex == 1 ? SnackBarTabView1Page():
           tabIndex == 2 ? SnackBarTabView2Page():      
           tabIndex == 3 ? SnackBarTabView3Page(): 
